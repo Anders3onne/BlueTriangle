@@ -22,11 +22,16 @@ if(sideSum1(firstvalue,secondvalue) <= thirdvalue || sideSum2(secondvalue,thirdv
 }
 ;
 else if(firstvalue === secondvalue && secondvalue === thirdvalue){
-  text = "Equilaterial Triangle.";
+  text = "Equilateral Triangle.";
 }
-// this is Equivalent Triangle
+// this is Equivalateral Triangle
 
 else if(firstvalue===secondvalue || firstvalue===thirdvalue || secondvalue===thirdvalue) {
   text="Isoscele Triangle.";
 }
 // this is Isoscele Triangle
+
+else if(firstvalue!==secondvalue && firstvalue!==thirdvalue &&secondvalue!==thirdvalue){
+  text="Scalene Triangle."
+}
+// this is Scalene Triangle
