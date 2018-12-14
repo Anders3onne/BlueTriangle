@@ -8,3 +8,11 @@ var sideSum2 = function(secondvalue, thirdvalue) {
 var sideSum3 = function(firstvalue, thirdvalue) {
   return firstvalue + thirdvalue;
 };
+function run(){
+  
+  var firstvalue=document.getElementById('one').value;
+  var secondvalue=document.getElementById('two').value;
+  var thirdvalue=document.getElementById('three').value;
+  var array=[firstvalue,secondvalue,thirdvalue]
+}
+;
