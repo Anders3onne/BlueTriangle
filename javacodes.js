@@ -21,3 +21,7 @@ if(sideSum1(firstvalue,secondvalue) <= thirdvalue || sideSum2(secondvalue,thirdv
    text="it is not a triangle"
 }
 ;
+else if(firstvalue === secondvalue && secondvalue === thirdvalue){
+  text = "Equilaterial Triangle.";
+}
+// this is Equivalent Triangle
