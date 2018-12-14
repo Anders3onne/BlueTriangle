@@ -38,6 +38,6 @@ else if(firstvalue!==secondvalue && firstvalue!==thirdvalue &&secondvalue!==thir
 else{
   text = "Not a Triangle.";
 }
-document.getElementById("demo").innerHTML = "The value["+array+"]"+" is ";
+document.getElementById("demo").innerHTML = "["+array+"]"+" is ";
 document.getElementById('demo').innerHTML += text;
 
