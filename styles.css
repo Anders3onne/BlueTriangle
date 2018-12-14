@@ -7,4 +7,19 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     color:yellowgreen;
+    text-align: center;
+    padding-top: 120px;
 }
+
+.see{
+    text-align: center;
+    padding: 25px;
+    border-color: cornflowerblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+
+
+
