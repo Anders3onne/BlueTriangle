@@ -19,6 +19,26 @@ h1{
     font-size: 20px;
     justify-content: space-between;
 }
+input[type=text]{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 30%;
+    border: 2px solid #ccc;
+}
+input[type=text]:hover{
+    background-color: navy;
+} 
+button{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 30%;
+}
+button:hover {
+    background-color: yellowgreen;
+}
 
 
 
