@@ -8,12 +8,12 @@ h1{
     position: relative;
     color:yellowgreen;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 300px;
 }
 
 .see{
     text-align: center;
-    padding: 25px;
+    padding: 120px;
     border-color: cornflowerblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
@@ -21,14 +21,14 @@ h1{
 }
 input[type=text]{
     width: 20%;
-    padding: 12px 20px;
+    padding: 50px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 30%;
-    border: 2px solid #ccc;
+    border: 2px grey;
 }
 input[type=text]:hover{
-    background-color: navy;
+    background-color: grey;
 } 
 button{
     width: 10%;
@@ -37,7 +37,12 @@ button{
     border-radius: 30%;
 }
 button:hover {
-    background-color: yellowgreen;
+    background-color: grey;
+}
+footer{
+    text-align: center;
+    
+
 }
 
 
