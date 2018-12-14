@@ -25,3 +25,8 @@ else if(firstvalue === secondvalue && secondvalue === thirdvalue){
   text = "Equilaterial Triangle.";
 }
 // this is Equivalent Triangle
+
+else if(firstvalue===secondvalue || firstvalue===thirdvalue || secondvalue===thirdvalue) {
+  text="Isoscele Triangle.";
+}
+// this is Isoscele Triangle
