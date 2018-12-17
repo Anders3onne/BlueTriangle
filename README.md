@@ -27,10 +27,13 @@ To get an Scalene Triangle         the sum of 2 sides are greater than the third
 Not a triangle                     the sum of 2 sides is equal to or less than the third side                12;5;7             [12,5,7] is not a triangle
 Undefined                          0 as one side and other sides have other numbers                          0;5;7              [0;5;7]  Undefined
 
+
 ##Support
+
 If you have meet any issues, contact: email: uwinezaandersonne@gmail.com 
                                       whatsapp: +250781521832
 
 ##License
+
 MIT License. Copyright(c)2018 Uwineza Adolatha
 
