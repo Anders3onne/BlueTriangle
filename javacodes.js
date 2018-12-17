@@ -9,7 +9,7 @@ function run(){
 if (firstside <=0 || secondside <= 0 || thirdside <= 0) {
   text = "Undefined";
 }
-// this is an undefined
+//this is an undefined
 
 else if (
         (firstside + secondside <= thirdside &&
