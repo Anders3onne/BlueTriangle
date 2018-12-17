@@ -1,43 +1,67 @@
-var sideSum1 = function(firstvalue, secondvalue) {
-  return firstvalue + secondvalue;
-}
-;
-var sideSum2 = function(secondvalue, thirdvalue) {
-  return secondvalue + thirdvalue;
-};
-var sideSum3 = function(firstvalue, thirdvalue) {
-  return firstvalue + thirdvalue;
-};
+
 function run(){
-  
-  var firstvalue=document.getElementById('one').value;
-  var secondvalue=document.getElementById('two').value;
-  var thirdvalue=document.getElementById('three').value;
-  var array=[firstvalue,secondvalue,thirdvalue]
+  var firstside= parseInt(document.getElementById('one').value);
+  var secondside= parseInt(document.getElementById('two').value);
+  var thirdside= parseInt(document.getElementById('three').value);
+  var array=[firstside,secondside,thirdside];
+  var text;
+//if entering positive value with 3 side
+if (firstside <=0 || secondside <= 0 || thirdside <= 0) {
+  text = "A triangle must have 3 sides with positive definite length!";
 }
-;
-var text;
-if(sideSum1(firstvalue,secondvalue) <= thirdvalue || sideSum2(secondvalue,thirdvalue) <= firstvalue || sideSum3(firstvalue,thirdvalue) <= secondvalue){
-   text="it is not a triangle"
-}
-;
-else if(firstvalue === secondvalue && secondvalue === thirdvalue){
-  text = "Equilateral Triangle.";
-}
+ //This is not a triangle
+
+else if (
+        (firstside + secondside <= thirdside &&
+            secondside + firstside <= thirdside) ||
+        (firstside + thirdside <= secondside &&
+            thirdside + firstside <= secondside) ||
+        (secondside + thirdside <= firstside && thirdside + secondside <= firstside)
+    ) {
+        text = " Not a Triangle";
+
+    }
 // this is Equivalateral Triangle
 
-else if(firstvalue===secondvalue || firstvalue===thirdvalue || secondvalue===thirdvalue) {
-  text="Isoscele Triangle.";
+else if (
+  firstside === secondside &&
+  secondside === thirdside &&
+  thirdside === firstside
+) {
+  text = " equilateral.";
 }
-// this is Isoscele Triangle
 
-else if(firstvalue!==secondvalue && firstvalue!==thirdvalue &&secondvalue!==thirdvalue){
-  text="Scalene Triangle."
+
+// this is an Isoscele Triangle
+
+else if(firstside!==secondside && firstside!==thirdside &&secondside!==thirdside){
+  text="Scalene Triangle.";
 }
 // this is Scalene Triangle
-else{
-  text = "Not a Triangle.";
+
+else if (
+  firstside === secondside ||
+  secondside === thirdside ||
+  thirdside === firstside
+) {
+  text = " isosceles.";
+}
+//if triangle is scalene
+
+else if (
+  firstside !== secondside &&
+
+  firstside !== thirdside &&
+
+  secondN !== thirdside
+) {
+  text = " scalene";
+}
+//if triangle is error
+
+else {
+  text = " error";
 }
 document.getElementById("demo").innerHTML = "["+array+"]"+" is ";
-document.getElementById('demo').innerHTML += text;
-
+document.getElementById("demo").innerHTML += text;
+}
