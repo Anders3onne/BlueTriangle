@@ -7,9 +7,9 @@ function run(){
   var text;
 //if entering positive value with 3 side
 if (firstside <=0 || secondside <= 0 || thirdside <= 0) {
-  text = "A triangle must have 3 sides with positive definite length!";
+  text = "Undefined";
 }
- //This is not a triangle
+// this is an undefined
 
 else if (
         (firstside + secondside <= thirdside &&
@@ -21,7 +21,7 @@ else if (
         text = " Not a Triangle";
 
     }
-// this is Equivalateral Triangle
+// this is not a triangle
 
 else if (
   firstside === secondside &&
@@ -31,10 +31,12 @@ else if (
   text = " equilateral.";
 }
 
+// this is an Equilateral Triangle
 
-// this is an Isoscele Triangle
-
-else if(firstside!==secondside && firstside!==thirdside &&secondside!==thirdside){
+else if(firstside!==secondside && 
+        firstside!==thirdside &&
+        secondside!==thirdside)
+{
   text="Scalene Triangle.";
 }
 // this is Scalene Triangle
@@ -42,22 +44,11 @@ else if(firstside!==secondside && firstside!==thirdside &&secondside!==thirdside
 else if (
   firstside === secondside ||
   secondside === thirdside ||
-  thirdside === firstside
-) {
-  text = " isosceles.";
+  thirdside === firstside) {
+  text = " Isoscele Triangle.";
 }
-//if triangle is scalene
+//if triangle is Isoscele
 
-else if (
-  firstside !== secondside &&
-
-  firstside !== thirdside &&
-
-  secondN !== thirdside
-) {
-  text = " scalene";
-}
-//if triangle is error
 
 else {
   text = " error";
@@ -65,3 +56,4 @@ else {
 document.getElementById("demo").innerHTML = "["+array+"]"+" is ";
 document.getElementById("demo").innerHTML += text;
 }
+
